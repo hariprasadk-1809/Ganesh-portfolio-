@@ -1236,7 +1236,7 @@ export default function App(){
       <style dangerouslySetInnerHTML={{__html:CSS}}/>
       {!loaded&&<Loader onDone={done}/>}
       <div style={{opacity:loaded?1:0,transition:"opacity 0.6s ease",position:'relative',zIndex:1}}>
-        <GhostCursor/>
+        <GhostCursor color="#00e5ff" brightness={2.2} bloomStrength={0.55} bloomRadius={0.85} bloomThreshold={0} grainIntensity={0.04} trailLength={60} inertia={0.55}/>
         <Nav/>
         <Hero/>
         <MarqueeBand/>
